@@ -24,7 +24,10 @@ under construction
 
 ## Features
 List of features ready and TODOs for future development
-* under construction
+* Features ready:
+* All monsters are displayed in a responsive way
+* TODOs:
+* Search bar, more info by clicking on individual images
 
 ## Status
 Project is: _in progress_.
