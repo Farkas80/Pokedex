@@ -1,0 +1,10 @@
+@mixin pokeGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+@mixin cardAnimation {
+    animation: bounce 0.5s linear;
+    border-radius: 25px;
+}

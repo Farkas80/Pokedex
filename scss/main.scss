@@ -1,31 +1,20 @@
+@import './config';
+@import './mixins';
+@import './keyFrames';
+
 body {
-    background-color: orangered;
+    background-color: $primary-color;
     margin: 0;
 }
 
 .card {
     list-style: none;
     padding: 40px;
-    background-color: #f4f4f4;
+    background-color: $background-color;
     text-align: center;
-}
 
-.card:hover {
-    animation: bounce 0.5s linear;
-}
-
-@keyframes bounce {
-    20% {
-        transform: translateY(-6px);
-    }
-    40% {
-        transform: translateY(0px);
-    }
-    60% {
-        transform: translateY(-2px);
-    }
-    20% {
-        transform: translateY(-6px);
+    &:hover {
+        @include cardAnimation;
     }
 }
 
@@ -38,7 +27,7 @@ body {
 
 .card-subtitle {
     font-weight: lighter;
-    color:rgb(7, 124, 7);
+    color: $secondary-color;
     margin-top: 5px;
 }
 
@@ -47,10 +36,8 @@ body {
 }
 
 #pokedex {
-    padding-inline-start: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
+    @include pokeGrid;
+    padding-inline-start: 0;   
 }
 
 .container {
