@@ -14,7 +14,7 @@ Pokedex
 Pokemon app to show all the 150 pocket monsters. Practice fetch API.
 
 ## Screenshots
-under construction
+![Pokedex](pokedex.png)
 
 ## Technologies
 * Tech 1 - HTML5
